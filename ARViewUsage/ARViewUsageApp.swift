@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ARViewUsageApp: App {
+    @State var isShowingCubes: Bool = false
+    @State var isShowingMotionCapture: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(isShowingCubes: $isShowingCubes, isShowingMotionCapture: $isShowingMotionCapture)
         }
     }
 }

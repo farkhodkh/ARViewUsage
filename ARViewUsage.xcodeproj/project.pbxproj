@@ -11,6 +11,14 @@
 		BFCEC11529D771FE0071B60F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC11429D771FE0071B60F /* ContentView.swift */; };
 		BFCEC11729D771FF0071B60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEC11629D771FF0071B60F /* Assets.xcassets */; };
 		BFCEC11A29D771FF0071B60F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEC11929D771FF0071B60F /* Preview Assets.xcassets */; };
+		BFCEC12129D7722F0071B60F /* ARCubeViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC12029D7722F0071B60F /* ARCubeViewContainer.swift */; };
+		BFCEC12429D774C90071B60F /* AppButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC12329D774C90071B60F /* AppButtonModifier.swift */; };
+		BFCEC12729D7753A0071B60F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC12629D7753A0071B60F /* Color.swift */; };
+		BFCEC12A29D7799E0071B60F /* ARMotionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC12929D7799E0071B60F /* ARMotionViewContainer.swift */; };
+		BFCEC12D29D77AF60071B60F /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC12C29D77AF60071B60F /* SkeletonJoint.swift */; };
+		BFCEC12F29D77B550071B60F /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC12E29D77B550071B60F /* SkeletonBone.swift */; };
+		BFCEC13229D77C4E0071B60F /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC13129D77C4E0071B60F /* Bones.swift */; };
+		BFCEC13429D782F00071B60F /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEC13329D782F00071B60F /* BodySkeleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		BFCEC11429D771FE0071B60F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFCEC11629D771FF0071B60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFCEC11929D771FF0071B60F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFCEC12029D7722F0071B60F /* ARCubeViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCubeViewContainer.swift; sourceTree = "<group>"; };
+		BFCEC12329D774C90071B60F /* AppButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonModifier.swift; sourceTree = "<group>"; };
+		BFCEC12629D7753A0071B60F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BFCEC12929D7799E0071B60F /* ARMotionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMotionViewContainer.swift; sourceTree = "<group>"; };
+		BFCEC12C29D77AF60071B60F /* SkeletonJoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
+		BFCEC12E29D77B550071B60F /* SkeletonBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
+		BFCEC13129D77C4E0071B60F /* Bones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
+		BFCEC13329D782F00071B60F /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,11 @@
 		BFCEC11129D771FE0071B60F /* ARViewUsage */ = {
 			isa = PBXGroup;
 			children = (
+				BFCEC13029D77C420071B60F /* enums */,
+				BFCEC12B29D77AD60071B60F /* uiElements */,
+				BFCEC12829D779810071B60F /* viewContainer */,
+				BFCEC12529D7752C0071B60F /* Ext */,
+				BFCEC12229D774BC0071B60F /* modifiers */,
 				BFCEC11229D771FE0071B60F /* ARViewUsageApp.swift */,
 				BFCEC11429D771FE0071B60F /* ContentView.swift */,
 				BFCEC11629D771FF0071B60F /* Assets.xcassets */,
@@ -65,6 +86,49 @@
 				BFCEC11929D771FF0071B60F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFCEC12229D774BC0071B60F /* modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEC12329D774C90071B60F /* AppButtonModifier.swift */,
+			);
+			path = modifiers;
+			sourceTree = "<group>";
+		};
+		BFCEC12529D7752C0071B60F /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEC12629D7753A0071B60F /* Color.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		BFCEC12829D779810071B60F /* viewContainer */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEC12029D7722F0071B60F /* ARCubeViewContainer.swift */,
+				BFCEC12929D7799E0071B60F /* ARMotionViewContainer.swift */,
+			);
+			path = viewContainer;
+			sourceTree = "<group>";
+		};
+		BFCEC12B29D77AD60071B60F /* uiElements */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEC12C29D77AF60071B60F /* SkeletonJoint.swift */,
+				BFCEC12E29D77B550071B60F /* SkeletonBone.swift */,
+				BFCEC13329D782F00071B60F /* BodySkeleton.swift */,
+			);
+			path = uiElements;
+			sourceTree = "<group>";
+		};
+		BFCEC13029D77C420071B60F /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEC13129D77C4E0071B60F /* Bones.swift */,
+			);
+			path = enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCEC11529D771FE0071B60F /* ContentView.swift in Sources */,
+				BFCEC13229D77C4E0071B60F /* Bones.swift in Sources */,
+				BFCEC13429D782F00071B60F /* BodySkeleton.swift in Sources */,
+				BFCEC12A29D7799E0071B60F /* ARMotionViewContainer.swift in Sources */,
 				BFCEC11329D771FE0071B60F /* ARViewUsageApp.swift in Sources */,
+				BFCEC12429D774C90071B60F /* AppButtonModifier.swift in Sources */,
+				BFCEC12D29D77AF60071B60F /* SkeletonJoint.swift in Sources */,
+				BFCEC12729D7753A0071B60F /* Color.swift in Sources */,
+				BFCEC12F29D77B550071B60F /* SkeletonBone.swift in Sources */,
+				BFCEC12129D7722F0071B60F /* ARCubeViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +342,7 @@
 				DEVELOPMENT_TEAM = DHKYX69V83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +372,7 @@
 				DEVELOPMENT_TEAM = DHKYX69V83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
